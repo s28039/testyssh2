@@ -1,0 +1,10 @@
+mkdir "$1"
+cd "$1"
+git init
+git remote add origin git@github.com:s28039/testyssh.git 
+cp ../kolokwium_config.sh .
+cp ../kolokwium.sh .
+echo "Numer indeksu: s28039" > ReadMe.MD
+git add .
+git commit -m "First commit"
+git branch Test
